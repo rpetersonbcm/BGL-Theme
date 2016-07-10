@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title><?php wp_title(' | ', true, 'right'); bloginfo('name');?></title>
 
     <!-- Custom CSS -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
-
+    <?php wp_head(); ?>
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
