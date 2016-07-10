@@ -19,19 +19,19 @@
 
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="fill" style="background-image:url('http://www.templateof.com/postpic/2013/03/windows-1-0-background-banner_268985.jpg');"></div>
                 <div class="carousel-caption">
                     <h2>Caption 1</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url('https://d1hw6n3yxknhky.cloudfront.net/011495751_prevstill.jpeg');" width="1900" height="1080"></div>
                 <div class="carousel-caption">
                     <h2>Caption 2</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('https://d3thflcq1yqzn0.cloudfront.net/032121358_prevstill.jpeg');" width="1900" height="1080"></div>
                 <div class="carousel-caption">
                     <h2>Caption 3</h2>
                 </div>
@@ -78,7 +78,7 @@
 
 						echo '</a>';
 						echo '</div>';
-						
+
 						echo '<div class="back face center">';
 						echo '<a href="'.get_permalink().'">';						
 						echo ''.the_post_thumbnail().'';
