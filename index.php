@@ -70,10 +70,19 @@
 					
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 
-						echo '<div class="col-md-4 sm-6">';
+						echo '<div class="col-md-4 sm-6" id="f1_container">';
+						echo '<div class="card" id="f1_card">';
+						echo '<div class="front face">';
 						echo '<a href="'.get_permalink().'">';						
 						echo ''.the_post_thumbnail().'';
 						echo '</a>';
+						echo '</div>';
+						echo '<div class="back face center">';
+						echo '<a href="'.get_permalink().'">';						
+						echo ''.the_post_thumbnail().'';
+						echo '</a>';
+						echo '</div>';
+						echo '</div>';
 						echo '</div>';
 					
 
@@ -121,6 +130,7 @@
                     <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
                 </a>
             </div>
+
         </div>
         <!-- /.row -->
 

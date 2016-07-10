@@ -21,6 +21,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
