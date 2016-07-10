@@ -75,12 +75,15 @@
 						echo '<div class="front face">';
 						echo '<a href="'.get_permalink().'">';						
 						echo ''.the_post_thumbnail().'';
+
 						echo '</a>';
 						echo '</div>';
+						
 						echo '<div class="back face center">';
 						echo '<a href="'.get_permalink().'">';						
 						echo ''.the_post_thumbnail().'';
-						echo '</a>';
+						echo '</a>';						
+						echo '<h2 class="picutre-text">'.get_the_content().'</h2>';
 						echo '</div>';
 						echo '</div>';
 						echo '</div>';

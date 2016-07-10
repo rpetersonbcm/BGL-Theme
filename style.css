@@ -23,8 +23,7 @@ body{
 
 #f1_container {
   position: relative;
-  margin: 10px auto;
-  
+  margin: 10px auto;  
   height: 281px;
   z-index: 1;
 }
@@ -39,7 +38,7 @@ body{
 }
 #f1_container:hover #f1_card {
   transform: rotateY(180deg);
-  box-shadow: -5px 5px 5px #aaa;
+ 
 }
 .face {
   position: absolute;
@@ -50,9 +49,28 @@ body{
 .face.back {
   display: block;
   transform: rotateY(180deg);
-  box-sizing: border-box;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  background-color: #aaa;
+  box-sizing: border-box;  
+  
+}
+
+.overlay{
+	position:absolute;
+	top: 30px;
+	left: 40px;
+	width: 80%;
+	padding: 20px;
+	background-color: #000;
+	opacity: .8;
+}
+.picutre-text{
+	position: absolute;
+	top: 0px;
+	left: 36px;
+	font-size: small;
+	border: 1px solid #fff;
+	width: 80%;
+	padding: 30px;
+	color: white;
+	text-align: center;
+	background: rgba(41, 128, 185,.8)
 }
