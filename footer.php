@@ -18,6 +18,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({

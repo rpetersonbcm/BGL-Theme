@@ -52,35 +52,37 @@
 
        <!-- Big 3 Icon Section -->
        <div class="row">
-			<div class="col-lg-12">
-			    <h1 class="page-header">
-			        Big 3 Icons
-			    </h1>
-			</div>
+			<div class="container" style="margin-top: 20px;">
+			    
+			
 			<?php 
 
-				$cat_args=array(
-			  	'orderby' => 'name',
-			  	'order' => 'ASC',
-			  	'hide_empty' => 0,
-			  	'exclude' => 1		  	
-			   	);
-			
-				$categories = get_categories($cat_args);
-				  foreach ($categories as $cat) {
+				$args = array(
+				        'post_type' => 'post',
+				        'cat' => 7
+				    );
 
-				        echo '<div class="col-md-4">';
-				        echo '<div class="panel panel-default">';
-				        echo '<div class="panel-heading">';
-				        echo '<h4><i class="fa fa-fw fa-check"></i>'.$cat->name.'</h4>';
-				        echo '</div>';
-				        echo '<div class="panel-body">';
-				        echo '<p>'.$cat->description.'</p>';
-				        echo '</div>';				        
-				        echo '</div>';
-				        echo '</div>';
-				    }
-			?>             
+				// The Query
+				$the_query = new WP_Query( $args );
+
+				// The Loop
+				if ( $the_query->have_posts() ) :
+					
+					while ( $the_query->have_posts() ) : $the_query->the_post();
+
+						echo '<div class="col-md-4 sm-6">';
+						echo '<a href="'.get_permalink().'">';						
+						echo ''.the_post_thumbnail().'';
+						echo '</a>';
+						echo '</div>';
+					
+
+					/* Restore original Post Data */
+					endwhile; endif; wp_reset_postdata();
+					
+				
+			?>  
+			</div>           
        </div>
        <!-- /.row -->
 
@@ -91,7 +93,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://www.rpi.edu/dept/science/Assets_2014/images/test-21.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
