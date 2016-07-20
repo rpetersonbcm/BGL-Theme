@@ -21,56 +21,37 @@ body{
 }
 
 
-#f1_container {
-  position: relative;
-  margin: 10px auto;  
-  height: 281px;
-  z-index: 1;
-}
-#f1_container {
-  perspective: 1000;
-}
-#f1_card {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all .8s linear;
-}
-#f1_container:hover #f1_card {
-  transform: rotateY(180deg);
- 
-}
-.face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-.face.back {
-  display: block;
-  transform: rotateY(180deg);
-  box-sizing: border-box;  
-  
+.wrapper{
+	margin: 0 20px;
+	height: 380px;
 }
 
-.overlay{
-	position:absolute;
-	top: 30px;
-	left: 40px;
-	width: 80%;
-	padding: 20px;
-	background-color: #000;
-	opacity: .8;
-}
-.picutre-text{
-	position: absolute;
-	top: 0px;
-	left: 36px;
-	font-size: small;
-	border: 1px solid #fff;
-	width: 80%;
-	padding: 30px;
-	color: white;
+
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;	
+	background: #3085a3;
 	text-align: center;
-	background: rgba(41, 128, 185,.8)
+	cursor: pointer;
+	min-height: none;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }

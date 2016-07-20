@@ -48,12 +48,14 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div>
 
        <!-- Big 3 Icon Section -->
        <div class="row">
-			<div class="container" style="margin-top: 20px;">
-			    
+			
+			<div class="wrapper">
+                
+                
 			
 			<?php 
 
@@ -70,36 +72,51 @@
 					
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 
-						echo '<div class="col-md-4 sm-6" id="f1_container">';
-						echo '<div class="card" id="f1_card">';
-						echo '<div class="front face">';
-						echo '<a href="'.get_permalink().'">';						
+						echo '<div class="col-md-4 sm-6">';
+                        echo '<div class="grid">';
+						echo '<figure class="effect-chico">';																	
 						echo ''.the_post_thumbnail().'';
+                        echo '<figcaption>';
+                        echo '<h2>Warm <span>Oscar</span></h2>';
+                        echo '<p>Oscar is a decent man. He used to clean porches with pleasure.</p>';
+                        echo '<a href="#">View more</a>';
+                        echo '</figcaption>';						
+						echo '</figure>';
+                        echo '</div>';
+                        echo '</div>';
+						
 
-						echo '</a>';
-						echo '</div>';
+                        /*<figure class="effect-oscar">
+                            <img src="img/9.jpg" alt="img09"/>
+                            <figcaption>
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                                <a href="#">View more</a>
+                            </figcaption>           
+                        </figure>
 
-						echo '<div class="back face center">';
-						echo '<a href="'.get_permalink().'">';						
-						echo ''.the_post_thumbnail().'';
-						echo '</a>';						
-						echo '<h2 class="picutre-text">'.get_the_content().'</h2>';
-						echo '</div>';
-						echo '</div>';
-						echo '</div>';
-					
+                        echo '<div class="col-md-4 col-sm-6">';
+                        echo '<a href="'.get_permalink().'">';   
+                        echo ''.get_the_content().'';
+                        echo '</a>';
+                        echo '</div>';*/				
 
 					/* Restore original Post Data */
 					endwhile; endif; wp_reset_postdata();
 					
 				
 			?>  
-			</div>           
+			 </div>          
        </div>
        <!-- /.row -->
 
+      
+        
+
+
         <!-- Portfolio Section -->
-        <div class="row">
+        <div class="row wrapper" >
+
             <div class="col-lg-12">
                 <h2 class="page-header">Portfolio Heading</h2>
             </div>
