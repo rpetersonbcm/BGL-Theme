@@ -46,66 +46,95 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">Home</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                                <a href="full-width.html">Submit Ticket</a>
                             </li>
                             <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                                <a href="sidebar.html">IT New Hire Request</a>
+                            </li>                            
+                            <li>
+                                <a href="sidebar.html">Request a Custom Requisition</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">HR <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Short Term Disability</a>
                             </li>
                             <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                                <a href="sidebar.html">Application for FMLA</a>
+                            </li>                            
+                            <li>
+                                <a href="sidebar.html">Ethics Point</a>
+                            </li>  
+                                                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operations <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">Education Core</a>
                             </li>
                             <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                                <a href="portfolio-2-col.html">Client Services</a>
                             </li>
                             <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                                <a href="portfolio-3-col.html">Purchasing</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">Business Operations</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Specimen Management Division</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Genetic Counselors</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Kaizen</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Policies and Procedures</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <a href="#" >Marketing</a>                        
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quality Management <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
+                                <a href="full-width.html">Submit Incident</a>
                             </li>
                             <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
+                                <a href="sidebar.html">Licensing and Certifications</a>
                             </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
+                            
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Employee Search <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="full-width.html">Full Width Page</a>
+                                <div class="input-group">
+                                     <input type="text" class="form-control col-md-6"  placeholder="Employee Search" >
+                                     <span class="input-group-addon" id="employee-search-icon">
+                                         <button type="submit">
+                                             <span class="glyphicon glyphicon-search"></span>
+                                         </button>  
+                                     </span>
+                                 </div>
                             </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
+                            
                         </ul>
                     </li>
                 </ul>

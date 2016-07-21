@@ -12,7 +12,7 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery 
+    <!-- jQuery -->
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>-->
 
     <!-- Bootstrap Core JavaScript -->

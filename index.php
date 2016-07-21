@@ -19,19 +19,19 @@
 
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://www.templateof.com/postpic/2013/03/windows-1-0-background-banner_268985.jpg');"></div>
+                <div class="fill" style="background-image:url('<?php bloginfo('template_url'); ?>/images/genetics-slider1.png');" width="1900" height="1080"></div>
                 <div class="carousel-caption">
                     <h2>Caption 1</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('https://d1hw6n3yxknhky.cloudfront.net/011495751_prevstill.jpeg');" width="1900" height="1080"></div>
+                <div class="fill" style="background-image:url('<?php bloginfo('template_url'); ?>/images/genetics-slider2.png');" width="1900" height="1080"></div>
                 <div class="carousel-caption">
                     <h2>Caption 2</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('https://d3thflcq1yqzn0.cloudfront.net/032121358_prevstill.jpeg');" width="1900" height="1080"></div>
+                <div class="fill" style="background-image:url('<?php bloginfo('template_url'); ?>/images/genetics-slider3.png');" width="1900" height="1080"></div>
                 <div class="carousel-caption">
                     <h2>Caption 3</h2>
                 </div>
@@ -61,7 +61,7 @@
 
 				$args = array(
 				        'post_type' => 'post',
-				        'cat' => 7
+				        'cat' => 5
 				    );
 
 				// The Query
@@ -111,77 +111,249 @@
        <!-- /.row -->
 
       
-        
 
+       <section class="bg-parallax-1">
+                 <div class="container">                   
+                   <div class="row">
+                     <div class="col-xs-12 col-md-10 col-md-offset-1">
+                      <h1 class="text-white">Success</h1>
+                       <p class="h3 text-light">Developing a small company into a successful one may seem problematic. But we know how to achieve it.</p>
+                     </div>
+                   </div>
+                 </div>
+               </section>
+
+        <!-- Features Section -->
+        <div class="row wrapper">
+            <div class="col-lg-12">
+                <h2 class=""></h2>
+            </div>
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div class="panel panel-default " id="announcement-panel">
+                        <div class="panel-heading text-center">
+                           <h3 class="panel-title">Announcements</h3>
+                        </div>
+                        <div class="panel-body" id="announcement-list">
+                            <div class="bs-callout bs-callout-danger">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Start Bootstrap
+                                            <small>August 25, 2014 at 9:30 PM</small>
+                                        </h4>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>                     
+                            </div>
+                            <div class="bs-callout bs-callout-danger">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Start Bootstrap
+                                            <small>August 25, 2014 at 9:30 PM</small>
+                                        </h4>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>                     
+                            </div>  
+                            <div class="bs-callout bs-callout-danger">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Start Bootstrap
+                                            <small>August 25, 2014 at 9:30 PM</small>
+                                        </h4>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>                     
+                            </div>  
+                            <div class="bs-callout bs-callout-danger">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Start Bootstrap
+                                            <small>August 25, 2014 at 9:30 PM</small>
+                                        </h4>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>                     
+                            </div>  
+                            <div class="bs-callout bs-callout-danger">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Start Bootstrap
+                                            <small>August 25, 2014 at 9:30 PM</small>
+                                        </h4>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>                     
+                            </div>  
+                            <div class="bs-callout bs-callout-danger">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Start Bootstrap
+                                            <small>August 25, 2014 at 9:30 PM</small>
+                                        </h4>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>                     
+                            </div>  
+                            <div class="bs-callout bs-callout-danger">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Start Bootstrap
+                                            <small>August 25, 2014 at 9:30 PM</small>
+                                        </h4>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>                     
+                            </div>                         
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                <!-- Make Link Available on Hover one by one -->
+                   <div class="grid">
+                   <figure class="effect-chico">';                                                                   
+                   <img src="<?php bloginfo('template_url'); ?>/images/birthdays.png" class="event-photo" alt="">
+                   <figcaption>
+                   <h2>Employee <span>Birthdays</span></h2>
+                   <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                   <a href="#">View more</a>
+                   </figcaption>                       
+                   </figure>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="grid">
+                    <figure class="effect-chico">';                                                                   
+                    <img src="<?php bloginfo('template_url'); ?>/images/events.png" class="event-photo" alt="">
+                    <figcaption>
+                    <h2>Event <span>Photos</span></h2>
+                    <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                    <a href="#">View more</a>
+                    </figcaption>                       
+                    </figure>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <!-- /.row --> 
+    
 
         <!-- Portfolio Section -->
         <div class="row wrapper" >
 
-            <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
+            
+            <div class="col-md-4 col-sm-6">
+            <!-- Make Link Available on Hover one by one -->
+               <div class="grid">
+               <figure class="effect-chico">';                                                                   
+               <img src="<?php bloginfo('template_url'); ?>/images/employee-corner.png" alt="">
+               <figcaption>
+               <h2>Employee <span>Corner</span></h2>
+               <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+               <a href="#">View more</a>
+               </figcaption>                       
+               </figure>
+               </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://www.rpi.edu/dept/science/Assets_2014/images/test-21.jpg" alt="">
-                </a>
+                <div class="grid">
+                <figure class="effect-chico">';                                                                   
+                <img src="<?php bloginfo('template_url'); ?>/images/conference-room.png" alt="">
+                <figcaption>
+                <h2>Conference <span>Rooms</span></h2>
+                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                <a href="#">View more</a>
+                </figcaption>                       
+                </figure>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+                <!-- COMBINE USEFUL LINKS AND INFORMATION DIRECTORY -->
+                <div class="grid">
+                <figure class="effect-chico">';                                                                   
+                <img src="<?php bloginfo('template_url'); ?>/images/useful-links2.png" alt="">
+                <figcaption>
+                <h2>Useful <span>Links</span></h2>
+                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                <a href="#">View more</a>
+                </figcaption>                       
+                </figure>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+               <!-- COMBINE USEFUL LINKS AND INFORMATION DIRECTORY -->
+                <div class="grid">
+                <figure class="effect-chico">';                                                                   
+                <img src="<?php bloginfo('template_url'); ?>/images/molecular-minute.png" alt="">
+                <figcaption>
+                <h2>Molecular<span>Minute</span></h2>
+                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                <a href="#">View more</a>
+                </figcaption>                       
+                </figure>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+               <!-- COMBINE USEFUL LINKS AND INFORMATION DIRECTORY -->
+                <div class="grid">
+                <figure class="effect-chico">';                                                                   
+                <img src="<?php bloginfo('template_url'); ?>/images/hiyari-hatto.png" alt="">
+                <figcaption>
+                <h2>Hiyari<span>Hatto</span></h2>
+                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                <a href="#">View more</a>
+                </figcaption>                       
+                </figure>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+               <!-- COMBINE USEFUL LINKS AND INFORMATION DIRECTORY -->
+                <div class="grid">
+                <figure class="effect-chico">';                                                                   
+                <img src="<?php bloginfo('template_url'); ?>/images/gold-standard.png" alt="">
+                <figcaption>
+                <h2>Gold <span>Standard</span></h2>
+                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                <a href="#">View more</a>
+                </figcaption>                       
+                </figure>
+                </div>
             </div>
 
         </div>
         <!-- /.row -->
 
-        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
-            </div>
-            <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
-                    </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
-            </div>
-        </div>
-        <!-- /.row -->
+       
 
         <hr>
 
         <!-- Call to Action Section -->
-        <div class="well">
+        <div class="well wrapper">
             <div class="row">
                 <div class="col-md-8">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
