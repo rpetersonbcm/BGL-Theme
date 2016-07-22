@@ -15,6 +15,9 @@
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+   
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/engine1/jquery.js"></script>    <script src="https://www.youtube.com/iframe_api"></script>
     <?php wp_head(); ?>
     
 
@@ -40,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Start Bootstrap</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

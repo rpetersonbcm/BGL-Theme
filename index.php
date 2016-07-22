@@ -1,55 +1,14 @@
 <?php get_header(); ?>
 
 
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <?php 
-        	query_posts( 'post_per_page=1' );
-        		while(have_posts()) : the_post(); ?>
-        <?php endwhile; wp_reset_query(); ?>
-
-
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('<?php bloginfo('template_url'); ?>/images/genetics-slider1.png');" width="1900" height="1080"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('<?php bloginfo('template_url'); ?>/images/genetics-slider2.png');" width="1900" height="1080"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('<?php bloginfo('template_url'); ?>/images/genetics-slider3.png');" width="1900" height="1080"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
+    
 
     <!-- Page Content -->
     <div>
-
+        
+        <div class="row slider-div">
+            <?php masterslider(1); ?>
+        </div>
        <!-- Big 3 Icon Section -->
        <div class="row">
 			
@@ -77,9 +36,15 @@
 						echo '<figure class="effect-chico">';																	
 						echo ''.the_post_thumbnail().'';
                         echo '<figcaption>';
-                        echo '<h2>Warm <span>Oscar</span></h2>';
-                        echo '<p>Oscar is a decent man. He used to clean porches with pleasure.</p>';
-                        echo '<a href="#">View more</a>';
+                        echo '<h2>Warm <span>';
+                        the_title();
+                        echo '</span></h2>';
+                        echo '<p>';
+                        the_excerpt();
+                        echo '</p>';
+                        echo '<a href="';
+                        the_permalink();
+                        echo '">View more</a>';
                         echo '</figcaption>';						
 						echo '</figure>';
                         echo '</div>';

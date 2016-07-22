@@ -14,6 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import url('css/normalize.css');
 @import url('css/demo.css');
 @import url('css/set1.css');
+@import url('engine1/style.css');
 
 body{
 	padding-top: 0px;
@@ -25,6 +26,10 @@ body{
 	margin: 0 20px;	
 }
 
+.slider-div{
+	padding-top: 10px;
+	
+}
 
 
 /* Common style */
@@ -64,6 +69,10 @@ body{
 #employee-search-icon{
 	padding: 4px 12px;
 
+}
+
+figure.effect-chico p{
+	max-width: none;
 }
 
 
@@ -108,6 +117,9 @@ body{
 .m-b-10{
 	margin-bottom: 10px;
 }
+
+
+
 
 .event-photo{
 	opacity: 1!important;
@@ -157,4 +169,13 @@ body{
 }
 .bs-callout-info h4 {
     color: #5bc0de;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
 }
