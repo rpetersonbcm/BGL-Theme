@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
 
-    
-
+    <?php if (is_page(88)) {?>
+        <div>
+            <h1>hello</h1>
+        </div>
+    <?php } ?>
     <!-- Page Content -->
     <div>
         
@@ -12,9 +15,7 @@
        <!-- Big 3 Icon Section -->
        <div class="row">
 			
-			<div class="wrapper">
-                
-                
+			<div class="wrapper">              
 			
 			<?php 
 
@@ -78,15 +79,15 @@
       
 
        <section class="bg-parallax-1">
-                 <div class="container">                   
-                   <div class="row">
-                     <div class="col-xs-12 col-md-10 col-md-offset-1">
-                      <h1 class="text-white">Success</h1>
-                       <p class="h3 text-light">Developing a small company into a successful one may seem problematic. But we know how to achieve it.</p>
-                     </div>
-                   </div>
-                 </div>
-               </section>
+         <div class="container">                   
+           <div class="row">
+             <div class="col-xs-12 col-md-10 col-md-offset-1">
+              <h1 class="text-white">Success</h1>
+               <p class="h3 text-light">Developing a small company into a successful one may seem problematic. But we know how to achieve it.</p>
+             </div>
+           </div>
+         </div>
+       </section>
 
         <!-- Features Section -->
         <div class="row wrapper">

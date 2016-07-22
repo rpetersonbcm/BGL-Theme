@@ -21,8 +21,7 @@
     
     <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/engine1/wowslider.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/engine1/script.js"></script>
+    
 
   
 

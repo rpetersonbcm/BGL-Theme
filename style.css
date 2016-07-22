@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import url('css/normalize.css');
 @import url('css/demo.css');
 @import url('css/set1.css');
-@import url('engine1/style.css');
+
 
 body{
 	padding-top: 0px;
@@ -179,3 +179,12 @@ figure.effect-chico p{
   height: 60px;
   background-color: #f5f5f5;
 }
+
+/* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+		.dropdown:hover .dropdown-menu {
+		    display: block;
+		}
+    }    
+}
+
