@@ -1,12 +1,5 @@
 <?php get_header(); ?>
-
-
-    <?php if (is_page(88)) {?>
-        <div>
-            <h1>hello</h1>
-        </div>
-    <?php } ?>
-    <!-- Page Content -->
+   
     <div>
         
         <div class="row slider-div">
