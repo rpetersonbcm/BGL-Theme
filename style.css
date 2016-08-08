@@ -14,11 +14,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import url('css/normalize.css');
 @import url('css/demo.css');
 @import url('css/set1.css');
+@import url('css/hover.css');
 
 
 body{
 	padding-top: 0px;
 	background-color: #fff;
+	min-height: 100%;	        height: auto !important;
+	        height: 100%;
+	        /* Negative indent footer by it's height */
+	        margin: 0 auto -60px;
 }
 
 
@@ -26,7 +31,22 @@ body{
 	margin: 0 20px;	
 }
 
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+@media only screen and (max-width: 766px) {
+.collapsing, .in {background-color: #1376bc;}
+.collapsing ul li a, .in ul li a {color: #ffffff!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: #ffffff!important; background: #00a3ad;}
+}
+
+#bs-example-navbar-collapse-1{
+	margin-top: 50px;
+}
+
 .slider-div{
+	margin-top: 60px;
 	padding-top: 10px;
 	
 }
@@ -188,3 +208,80 @@ figure.effect-chico p{
     }    
 }
 
+/* Page Banner */
+
+
+.section-panel-header-hr{
+	font-size: 20px;
+	background-color: #1E67BC!important;
+	color: #ffffff!important;
+	text-transform: uppercase;
+}
+
+.panel-header-it{
+	background-color: #1E67BC!important;
+	color:#ffffff!important;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#hr-header{
+	font-size: 20px;
+	background-color: #1E67BC!important;
+	padding: 10px;
+	color: #ffffff;
+	margin-top: 0px;	
+	padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.links-list{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#it-header{
+	font-size: 20px;
+	background-color: #00A3AD!important;
+	padding: 10px;
+	color: #ffffff;
+	margin-top: 0px;	
+	padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.section-panel-header-it{
+	font-size: 20px;
+	background-color: #00A3AD!important;
+	color: #ffffff!important;
+	text-transform:  uppercase;
+}
+.panel-header-it{
+	background-color: #00A3AD!important;
+	color:#ffffff!important;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.op-link{
+	background-color: #46BEAA;	
+	font-size: 20px;
+	color: #ffffff!important;
+}
+
+.op-link:hover{
+	color: #46BEAA!important;
+}
+
+.img-portfolio {
+    margin-bottom: 10px;
+}
+
+.top-nav{
+	height: 120px;
+	border-bottom: 5px solid #1E76BC;
+	background-color: #ffffff;
+}

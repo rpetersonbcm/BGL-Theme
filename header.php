@@ -33,7 +33,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top top-nav" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -43,7 +43,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Start Bootstrap</a>
+                <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                    <img src="<?php bloginfo('template_url'); ?>/images/BaylorGenetics.png" class="event-photo img-responsive" alt="">
+                   
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -160,3 +163,4 @@
     </nav>
 
     
+</div>

@@ -6,19 +6,22 @@ get_header();
 
 ?>
 <div class="container-fluid">
-   <div class="row">
-	<img src="<?php bloginfo('template_url'); ?>/images/hr-banner.jpg" class="img-responsive">
-   </div>
-   
-</div>
+	<div class="row" style="margin-top:120px;">
+		<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/banners/hr-banner.jpg" />
+	</div>
+	<div class="row wrapper">
+		<h4 class="page-header">
+					
+		</h4>
+	</div>
+ 	
+ 	<?php query_posts('page_id=90'); while(have_posts()) : the_post(); ?>   
+ 	<?php the_content();?> 
+ 	<?php endwhile; wp_reset_query(); ?>
+	
+</div>  
 
 
+<?php get_footer(); ?>
 
-
-<?
-get_footer(); 
-
-
-
-?>
 

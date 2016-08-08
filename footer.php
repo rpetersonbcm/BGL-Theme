@@ -21,14 +21,7 @@
     
     <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 
-    
-
-  
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    
-    </script>
+       
 
     <?php wp_footer(); ?>
 

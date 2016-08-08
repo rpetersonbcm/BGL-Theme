@@ -8,7 +8,7 @@
        <!-- Big 3 Icon Section -->
        <div class="row">
 			
-			<div class="wrapper">              
+			<div class="wrapper" style="margin-top: 10px;">              
 			
 			<?php 
 
@@ -26,25 +26,44 @@
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 
 						echo '<div class="col-md-4 sm-6">';
-                        echo '<div class="grid">';
-						echo '<figure class="effect-chico">';																	
-						echo ''.the_post_thumbnail().'';
-                        echo '<figcaption>';
-                        echo '<h2>Warm <span>';
-                        the_title();
-                        echo '</span></h2>';
-                        echo '<p>';
+                        echo '<div class="hovereffect">';
+						echo '<img class="img-responsive" src="'.the_post_thumbnail().'">';																	
+						
+                        //echo '<h2>Warm <span>';
+                        //the_title();
+                        echo '<div class="overlay">';
+                        echo '<h2>';
                         the_excerpt();
-                        echo '</p>';
-                        echo '<a href="';
-                        the_permalink();
+                        echo '</h2>';                        
+                        echo '<a class="info" href="';
+                        $postID = 296;
+                        if($post->ID == $postID){
+                            bloginfo('template_url');
+                            echo '/pdfs/kaizen_intake_form.pdf';
+                            echo '" target="_blank"';
+                        } else{
+                           the_permalink();                        
+                           echo '?post_id=';
+                           echo $post->ID; 
+                        }
+                        
                         echo '">View more</a>';
-                        echo '</figcaption>';						
-						echo '</figure>';
+                        echo '</div>';					
+						
                         echo '</div>';
                         echo '</div>';
 						
-
+                        /*
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+                                    <div class="overlay">
+                                       <h2>Hover effect 1v2</h2>
+                                       <a class="info" href="#">link here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        */
                         /*<figure class="effect-oscar">
                             <img src="img/9.jpg" alt="img09"/>
                             <figcaption>

@@ -18,14 +18,17 @@
 	text-align: center;
 }
 
+.grid figure .new{
+	min-width: 200px;
+}
+
 /* Common style */
 .grid figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 320px;
-	
+	min-width: 320px;	
 	max-height: 360px;
 	width: 100%;
 	background: #3085a3;
