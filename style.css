@@ -26,13 +26,24 @@ body{
 	        margin: 0 auto -60px;
 }
 
-
+.dropdown-backdrop {
+    position: static;
+}
 .wrapper{
 	margin: 0 20px;	
 }
 
 .navbar-toggle .icon-bar {
     background-color: black;
+}
+
+.navbar-nav > li > a{    
+    color: #1E76BC;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:active{    
+    color: #00A3AD;
+    background: transparent;
 }
 
 @media only screen and (max-width: 766px) {
@@ -46,7 +57,7 @@ body{
 }
 
 .slider-div{
-	margin-top: 60px;
+	margin-top: 110px;
 	padding-top: 10px;
 	
 }
@@ -284,4 +295,25 @@ figure.effect-chico p{
 	height: 120px;
 	border-bottom: 5px solid #1E76BC;
 	background-color: #ffffff;
+}
+
+.promise-page-header{	
+    padding: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    background: #1f76bc;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #1e76bc;
+    border-radius: 10px;
+}
+
+.panel-blue > .panel-heading {
+  background-color: #1E76BC;
+  color: #ffffff;
+}
+
+.panel-blue > .panel-heading h4 > a:hover, .panel-blue > .panel-heading h4 > a:focus {
+  text-decoration: underline;
+  color: #b2e0e0;
 }

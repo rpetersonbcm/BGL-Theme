@@ -16,7 +16,6 @@ require_once('wp_bootstrap_navwalker.php');
 
 
 
-add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style' );
 
 /* Theme setup */
 add_action( 'after_setup_theme', 'bgtheme_setup' );
