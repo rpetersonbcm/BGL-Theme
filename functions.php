@@ -53,11 +53,17 @@ add_filter("the_content", "the_content_filter");
 
 //Limit Excerpt Length
 function custom_excerpt_length( $length ) {
-        return 15;
+        return 35;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
+    function custom_excerpt_more($more) {
+        return '';
+    }
+    add_filter('excerpt_more', 'custom_excerpt_more');
+
+    
 
 
 

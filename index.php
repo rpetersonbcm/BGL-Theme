@@ -14,7 +14,9 @@
 
 				$args = array(
 				        'post_type' => 'post',
-				        'cat' => 5
+				        'cat' => 5,
+                        'orderby'        => 'title',
+                        'order'          => 'ASC'
 				    );
 
 				// The Query
@@ -35,16 +37,19 @@
                         echo '<h2>';
                         the_excerpt();
                         echo '</h2>';                        
-                        echo '<a class="info" href="';
-                        $postID = 296;
-                        if($post->ID == $postID){
+                        echo '<a class="info" href="';                       
+                        if($post->ID == 296){
                             bloginfo('template_url');
                             echo '/pdfs/kaizen_intake_form.pdf';
                             echo '" target="_blank"';
+                        } elseif($post->ID == 322){
+                           
+                           echo 'http://www.focusedandcreative.com/think-tank';
+                           echo '" target="_blank"';
                         } else{
-                           the_permalink();                        
-                           echo '?post_id=';
-                           echo $post->ID; 
+                            the_permalink();                        
+                            echo '?post_id=';
+                            echo $post->ID; 
                         }
                         
                         echo '">View more</a>';
@@ -114,97 +119,52 @@
                            <h3 class="panel-title">Announcements</h3>
                         </div>
                         <div class="panel-body" id="announcement-list">
-                            <div class="bs-callout bs-callout-danger">
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Start Bootstrap
-                                            <small>August 25, 2014 at 9:30 PM</small>
-                                        </h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
-                                </div>                     
-                            </div>
-                            <div class="bs-callout bs-callout-danger">
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Start Bootstrap
-                                            <small>August 25, 2014 at 9:30 PM</small>
-                                        </h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
-                                </div>                     
-                            </div>  
-                            <div class="bs-callout bs-callout-danger">
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Start Bootstrap
-                                            <small>August 25, 2014 at 9:30 PM</small>
-                                        </h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
-                                </div>                     
-                            </div>  
-                            <div class="bs-callout bs-callout-danger">
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Start Bootstrap
-                                            <small>August 25, 2014 at 9:30 PM</small>
-                                        </h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
-                                </div>                     
-                            </div>  
-                            <div class="bs-callout bs-callout-danger">
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Start Bootstrap
-                                            <small>August 25, 2014 at 9:30 PM</small>
-                                        </h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
-                                </div>                     
-                            </div>  
-                            <div class="bs-callout bs-callout-danger">
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Start Bootstrap
-                                            <small>August 25, 2014 at 9:30 PM</small>
-                                        </h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
-                                </div>                     
-                            </div>  
-                            <div class="bs-callout bs-callout-danger">
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                         <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Start Bootstrap
-                                            <small>August 25, 2014 at 9:30 PM</small>
-                                        </h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
-                                </div>                     
-                            </div>                         
+
+                            <?php 
+
+                                $args = array(
+                                        'post_type' => 'post',
+                                        'cat' => 4,
+                                        'orderby'        => 'date',
+                                        'order'          => 'ASC'
+                                );
+
+                                // The Query
+                                $the_query = new WP_Query( $args );
+
+                                // The Loop
+                                if ( $the_query->have_posts() ) :
+                                    
+                                    while ( $the_query->have_posts() ) : $the_query->the_post();
+
+
+                            echo    '<div class="bs-callout bs-callout-danger">';
+                            echo    '<div class="media">';
+                            echo        '<a class="pull-left" href="#">';
+                            echo             '<img class="media-object" src="http://placehold.it/64x64" alt="">';
+                            echo        '</a>';
+                            echo        '<div class="media-body">';
+                            echo            '<h4 class="media-heading">';
+                                                the_title();
+                            echo            '  <small>';
+                                                the_date();
+                            echo            ' at ';
+                                                the_time();         
+                            echo            '</small>';
+                            echo            '</h4>';
+                                            the_excerpt();
+                            echo    '<a href="';
+                            the_permalink();                        
+                            echo    '?post_id=';
+                            echo        $post->ID;
+                            echo    '">View more</a>';  
+                            echo    '</div>';
+                            echo    '</div>';                   
+                            echo    '</div>';
+                                   
+
+                            endwhile; endif; wp_reset_postdata();?>  
+
                         </div>
 
                     </div>
