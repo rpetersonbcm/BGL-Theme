@@ -14,7 +14,7 @@
 
 				$args = array(
 				        'post_type' => 'post',
-				        'cat' => 5,
+				        'cat' => 13,
                         'orderby'        => 'title',
                         'order'          => 'ASC'
 				    );
@@ -140,9 +140,7 @@
 
                             echo    '<div class="bs-callout bs-callout-danger">';
                             echo    '<div class="media">';
-                            echo        '<a class="pull-left" href="#">';
-                            echo             '<img class="media-object" src="http://placehold.it/64x64" alt="">';
-                            echo        '</a>';
+                           
                             echo        '<div class="media-body">';
                             echo            '<h4 class="media-heading">';
                                                 the_title();
@@ -262,7 +260,7 @@
                 <figure class="effect-chico">';                                                                   
                 <img src="<?php bloginfo('template_url'); ?>/images/hiyari-hatto.png" alt="">
                 <figcaption>
-                <h2>Hiyari<span>Hatto</span></h2>
+                
                 <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
                 <a href="#">View more</a>
                 </figcaption>                       
@@ -275,7 +273,7 @@
                 <figure class="effect-chico">';                                                                   
                 <img src="<?php bloginfo('template_url'); ?>/images/gold-standard.png" alt="">
                 <figcaption>
-                <h2>Gold <span>Standard</span></h2>
+                
                 <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
                 <a href="#">View more</a>
                 </figcaption>                       
