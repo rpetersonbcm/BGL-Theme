@@ -114,9 +114,9 @@
             <div class="row">
 
                 <div class="col-md-8">
-                    <div class="panel panel-default " id="announcement-panel">
-                        <div class="panel-heading text-center">
-                           <h3 class="panel-title">Announcements</h3>
+                    <div class="panel panel-default " >
+                        <div class="panel-heading text-center" id="announcement-panel">
+                           <h3 class="panel-title" id="announcement-title">Announcements</h3>
                         </div>
                         <div class="panel-body" id="announcement-list">
 
@@ -138,13 +138,12 @@
                                     while ( $the_query->have_posts() ) : $the_query->the_post();
 
 
-                            echo    '<div class="bs-callout bs-callout-danger">';
-                            echo    '<div class="media">';
-                           
+                            echo    '<div class="bs-callout bs-callout-white">';
+                            echo    '<div class="media">';                           
                             echo        '<div class="media-body">';
                             echo            '<h4 class="media-heading">';
                                                 the_title();
-                            echo            ' <small>';
+                            echo            ' <small class="media-date">';
                                                 the_date();
                             echo            '</small>';
                             echo            '</h4>';
