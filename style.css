@@ -221,7 +221,6 @@ figure.effect-chico p{
 
 /* Page Banner */
 
-
 .section-panel-header-hr{
 	font-size: 20px;
 	background-color: #1E67BC!important;
@@ -247,6 +246,29 @@ figure.effect-chico p{
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
+
+/* Marketing Page */
+
+.marketing > h1 > a{
+	color: #46BEAA!important;
+}
+.marketing-header{
+	text-align: center;
+	
+}
+.section-panel-header-marketing{
+	font-size: 20px;
+	background-color: #46BEAA!important;
+	color: #ffffff!important;
+	text-transform: uppercase;
+}
+
+#headingOne, #headingTwo, #headingThree{
+	padding-top: 0px;
+}
+
+
+
 
 .links-list{
 	margin-top: 10px;
@@ -278,13 +300,13 @@ figure.effect-chico p{
 }
 
 .op-link{
-	background-color: #46BEAA;	
+	background-color: #d1d1d1;	
 	font-size: 20px;
-	color: #ffffff!important;
+	color: #1E76BC!important;
 }
 
 .op-link:hover{
-	color: #46BEAA!important;
+	color: #1E76BC!important;
 }
 
 .img-portfolio {

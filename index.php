@@ -14,7 +14,7 @@
 
 				$args = array(
 				        'post_type' => 'post',
-				        'cat' => 13,
+				        'cat' => 5,
                         'orderby'        => 'title',
                         'order'          => 'ASC'
 				    );
@@ -126,7 +126,7 @@
                                         'post_type' => 'post',
                                         'cat' => 4,
                                         'orderby'        => 'date',
-                                        'order'          => 'ASC'
+                                        'order'          => 'DESC'
                                 );
 
                                 // The Query
@@ -144,18 +144,15 @@
                             echo        '<div class="media-body">';
                             echo            '<h4 class="media-heading">';
                                                 the_title();
-                            echo            '  <small>';
+                            echo            ' <small>';
                                                 the_date();
-                            echo            ' at ';
-                                                the_time();         
                             echo            '</small>';
                             echo            '</h4>';
                                             the_excerpt();
                             echo    '<a href="';
-                            the_permalink();                        
+                                        the_permalink();                        
                             echo    '?post_id=';
-                            echo        $post->ID;
-                            echo    '">View more</a>';  
+                            echo        $post->ID.'">View more</a>';  
                             echo    '</div>';
                             echo    '</div>';                   
                             echo    '</div>';
@@ -171,7 +168,7 @@
                 <!-- Make Link Available on Hover one by one -->
                    <div class="grid">
                    <figure class="effect-chico">';                                                                   
-                   <img src="<?php bloginfo('template_url'); ?>/images/birthdays.png" class="event-photo" alt="">
+                   <img src="<?php bloginfo('template_url'); ?>/images/birthday2.png" class="event-photo" alt="">
                    <figcaption>
                    <h2>Employee <span>Birthdays</span></h2>
                    <p>Oscar is a decent man. He used to clean porches with pleasure.</p>

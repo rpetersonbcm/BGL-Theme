@@ -1,13 +1,13 @@
 <?php
 /**
-* Template Name: IT
+* Template Name: Quality Management
 */
 get_header();
 
 ?>
 <div class="container-fluid">
 	<div class="row" style="margin-top:120px;">
-		<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/banners/it-banner.jpg" />
+		<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/banners/qm-banner.jpg" />
 	</div>
 	<div class="row wrapper">
 		<h4 class="page-header">
@@ -19,15 +19,13 @@ get_header();
 			</div>		
 		</h4>
 	</div>
-
+ 	
+ 	<?php query_posts('page_id=390'); while(have_posts()) : the_post(); ?>   
+ 	<?php the_content();?> 
+ 	<?php endwhile; wp_reset_query(); ?>
 	
-			
-			<?php query_posts('page_id=88'); while(have_posts()) : the_post(); ?>   
-			<?php the_content();?> 
-			<?php endwhile; wp_reset_query(); ?>
-			
-		
-</div>
+</div>  
+
 
 <?php get_footer(); ?>
 
